@@ -24,7 +24,7 @@ const TimeInput = ({
 }: ITimeInput) => {
   return (
     <input
-      type="date"
+      type="time"
       name={name}
       id={id}
       placeholder={placeholder}
