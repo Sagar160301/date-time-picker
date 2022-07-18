@@ -9,11 +9,7 @@ id --- id should be a string for your identification of component
 
 placeholder --- it should be string
 onChange - this function will not return any thing, only you can  
-style: {
-padding
-marigin
-border
-outline
-width
-hieght
-};
+size --- it will contain 3 value
+a) small
+b) medium
+c) large
