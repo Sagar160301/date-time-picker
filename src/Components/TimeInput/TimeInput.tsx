@@ -3,24 +3,36 @@ import React from "react";
 interface ITimeInput {
   name?: string;
   id?: string;
-  style?: {
-    padding?: string;
-    marigin?: string;
-    border?: string;
-    outline?: string;
-    width?: string;
-    hieght?: string;
-  };
+  size?: string;
   placeholder?: string;
   onChange: () => void;
 }
 
+const small = {
+  padding: "3px",
+  marigin: "3px",
+  fontSize: "0.8rem",
+  boxShadow: "0 0 3px #0044ca, 0 0 3px #0044ca",
+};
+const medium = {
+  padding: "6px",
+  marigin: "6px",
+  fontSize: "1rem",
+  boxShadow: "0 0 6px #0044ca, 0 0 6px #0044ca",
+};
+const large = {
+  padding: "7px 10px",
+  marigin: "10px",
+  fontSize: "1.2rem",
+  boxShadow: "0 0 10px #0044ca, 0 0 10px #0044ca",
+};
+
 const TimeInput = ({
-  name = "date",
+  name = "time",
   placeholder = "choose date",
   id,
   onChange,
-  style,
+  size = "medium",
 }: ITimeInput) => {
   return (
     <input
@@ -29,7 +41,7 @@ const TimeInput = ({
       id={id}
       placeholder={placeholder}
       onChange={onChange}
-      style={style}
+      style={size === "large" ? large : size === "medium" ? medium : small}
     />
   );
 };

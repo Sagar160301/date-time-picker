@@ -1,6 +1,6 @@
 {
-  "name": "sagar-react-date-time-picker-component",
-  "version": "1.0.1",
+  "name": "datetimepicker-react-component",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "rollup": "rollup -c"
